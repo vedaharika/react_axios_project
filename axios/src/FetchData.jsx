@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react'
 import axios from 'axios'
-import './App.css'
+import Table from 'react-bootstrap/Table'
+//import './App.css'
+
 
 
 function FetchData(){
@@ -12,11 +14,11 @@ function FetchData(){
     },[]);
     return(
         <div className='container'>
-            <div className='mt-3'>
+            {/* <div className='mt-3'> */}
                 <h3>Fetch Data from API in React with Axios</h3>
-                <table className='table'>
+                <Table striped bordered hover size="sm">
                     <thead>
-                        <tr>
+                        <tr class="table-primary">
                             <th>UserId</th>
                             <th>ID</th>
                             <th>Title</th>
@@ -24,7 +26,7 @@ function FetchData(){
                             {/* <th>City</th> */}
                         </tr>
                     </thead>
-                    <tbody>{
+                    <tbody class="table-success">{
                         
                         data.map((user,index) => { 
                             return <tr key={index}>
@@ -37,11 +39,11 @@ function FetchData(){
                         })}
 
                     </tbody>
-                </table>
+                </Table>
 
             </div>
 
-        </div>
+        
     )
 }
 export default FetchData
