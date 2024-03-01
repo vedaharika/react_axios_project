@@ -18,7 +18,7 @@ function FetchData(){
                 <h3>Fetch Data from API in React with Axios</h3>
                 <Table striped bordered hover size="sm">
                     <thead>
-                        <tr class="table-primary">
+                        <tr class="table-danger">
                             <th>UserId</th>
                             <th>ID</th>
                             <th>Title</th>
@@ -26,7 +26,7 @@ function FetchData(){
                             {/* <th>City</th> */}
                         </tr>
                     </thead>
-                    <tbody class="table-success">{
+                    <tbody class="table-info">{
                         
                         data.map((user,index) => { 
                             return <tr key={index}>
