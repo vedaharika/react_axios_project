@@ -13,8 +13,8 @@ function FetchData(){
         .catch(err => console.log(err));
     },[]);
     return(
-        <div className='container'>
-            {/* <div className='mt-3'> */}
+        <div className='data-container'>
+            <div className='mt-3'/>
                 <h3>Fetch Data from API in React with Axios</h3>
                 <Table striped bordered hover size="sm">
                     <thead>
